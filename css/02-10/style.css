@@ -1,0 +1,100 @@
+*{margin:0;padding: 0;box-sizing: border-box;}
+img {
+  width: 100%; /* 300 px */
+  height: 100%; /* 300px */
+  object-fit: cover;
+}
+
+.esempio {
+  width: 300px;
+  border: 2px solid red;
+  background-color: red;
+  height: 300px;
+  top: 0px;
+  bottom: 10%;
+  right: 20rem;
+  left: 20em;
+  z-index: 1;
+  /*   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4); */
+  position: relative;
+}
+.esempio2 {
+  width: 300px;
+  border: 2px solid blue;
+  background-color: blue;
+  height: 300px;
+  top: 100px;
+  /* left: 15em;
+  z-index: 0; */
+  position: absolute;
+}
+
+.esempio3 {
+  width: 300px;
+  height: 300px;
+/*   border: 3px solid black; */
+  position: relative;
+
+
+    
+}
+
+
+.esempio4 {
+  width: 50px;
+  height: 50px;
+  border: 3px solid red;
+  position: relative;
+
+}
+.foto {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* .foto::after {
+  content: "";
+  color: red;
+  background-color: rgb(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+} */
+
+.pellicola{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.testo{
+font-size: 2rem;
+color: #fff;
+position: relative;
+z-index: 2;
+
+
+}
+/* .uno {
+  bottom: 0px;
+}
+.due {
+  right: 0;
+}
+.tre {
+  top: 0;
+}
+.qua {
+  right: 0;
+  bottom: -30px;
+} */

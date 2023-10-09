@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  border: 1px solid red;
+}
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+.menu-principale ul{
+    display: flex;
+    gap: 20px;
+}
+
+.menu_contatti ul{
+    display: flex;
+    gap: 20px;
+}
+
+.header__wrapper{
+padding: 0 30px;
+    display: flex;
+    align-items: center;
+/*     justify-content: space-between; */
+}
+.logo{
+    width: 100px;
+    margin-right: auto;
+}
+
+.menus__header{
+    display: flex;
+    gap: 20px;
+    justify-content: sa;
+}

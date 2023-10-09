@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-blog.css" />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <title>Css</title>
+    <!-- prima della chiusura di head inserisco il tag style -->
+
+    <style>
+      /* tutte le regole scritte all'interno della pagina */
+
+      p {
+        color: chocolate;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Il CSS</h1>
+
+    <p>Cascading Style Sheets</p>
+    <p>Folgi di stile a cascata</p>
+    11111 colora il titolo di rosso
+    <!-- sovrascrivere una regola -->
+    <!-- 
+    ********
+    ********
+    ********
+    ********
+    ********
+ -->
+    22222 colora il titolo di verde
+    <!-- 
+    ********
+    ********
+    ********
+    ********
+    ********
+ -->
+    33333 colora il titolo di blu
+    <!-- 
+    ********
+    ********
+    ********
+    ********
+    ********
+ -->
+    44444 colora il titolo di giallo priorità dei tipi di fogli di stile
+    <p>Stile in linea, in-line</p>
+    <!-- 100 -->
+    <p style="color: red; background-color: bisque; font-size: 20px">
+      ----- Sono le regole di stile scritte direttamente sul tag
+    </p>
+    <p>Stile on page, incorporato</p>
+    <!-- 50 -->
+    <p>
+      ----- Più regole di stile scritte direttamnte sulla pagine si inseriscono
+      nel tag <code>head</code>
+    </p>
+    <p>Stile off page, foglio colelgato</p>
+    <!-- 0 -->
+    <p>----- Più regole scritte in un file apposito all'estrno della pagina</p>
+
+    <h2>Anotomia di una regola css</h2>
+    <!-- selezionatore{
+        proprietà1: valore;
+        proprietà2: valore;
+        proprietà3: valore;
+        proprietà4: valore;
+        proprietà5: valore;
+    } -->
+    <!-- selezionatore{
+        proprietà1: valore;
+        proprietà2: valore;
+        proprietà3: valore;
+        proprietà4: valore;
+        proprietà5: valore;
+    } -->
+    <!-- selezionatore{
+        proprietà1: valore;
+        proprietà2: valore;
+        proprietà3: valore;
+        proprietà4: valore;
+        proprietà5: valore;
+    } -->
+    <h2>I selezionatori</h2>
+    <p>selezione con il tag</p>
+    <!-- 0 -->
+    <p>selezione con la classe</p>
+    <!-- 50 -->
+    <p>selezione con l' id</p>
+    <!-- 100 -->
+  </body>
+</html>
