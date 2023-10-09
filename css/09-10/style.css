@@ -25,4 +25,5 @@ img{
 
 .blog__cards-card{
     border: 1px solid blue;
+    width: 33.33%;
 }
