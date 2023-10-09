@@ -33,7 +33,9 @@ img {
 }
 .blog__cards-card-testo {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .blog__cards-card-testo h3 {
-  
+  margin-bottom: auto;
 }
