@@ -10,6 +10,7 @@ img {
 }
 
 .blog__cards {
+  padding: 0 30px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,7 +18,7 @@ img {
 }
 
 .blog__cards-container {
-  border: 1px solid red;
+ 
   display: flex;
   width: 1200px;
   height: 500px;
@@ -25,30 +26,162 @@ img {
 }
 
 .blog__cards-card {
-  border: 1px solid blue;
+
   width: 33.33%;
   height: 100%;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
 }
+
 .blog__cards-card-testo {
   height: 100%;
   display: flex;
   flex-direction: column;
   padding: 20px;
+
 }
+
 .blog__cards-card-testo h3 {
   margin-bottom: auto;
 }
 
-.blog__cards-card-testo p{
+.blog__cards-card-testo p {
   margin-bottom: 20px;
+
 }
 
-.blog__cards-card-testo button{
-  padding: 8px 35px; 
+.blog__cards-card-testo button {
+  padding: 8px 35px;
   width: fit-content;
   cursor: pointer;
   border: none;
-  background-color: antiquewhite;
-} 
+  background-color: #72212282;
+}
+
+/* gestione del colore
+letterale => red, green, blue, yellow, black, white, pink, purple, orange, brown, grey, silver, gold,
+esadecimale =>
+0 -> F (0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F)
+#00 00 00 -> #ff ff ff
+red green blue -> o luminosità per il rosso 0 luminosità per il verde 0 luminosità per il blu 0
+#000000 => nero #000
+#ffffff => bianco #fff
+#333333 => grigio scuro #333
+#444444 => grigio scuro #444
+aaaaaaa => grigio chiaro #aaa
+
+rgb => red green blue
+rgba => red green blue alpha
+
+rgb => 000 000 000 => 255 255 255
+
+*/
+
+/* responsive layout 
+è un layout che si adatta a tutti i dispositivi
+media query
+
+sono delle che dettiamo al nostro foglio di stile
+per far adattare gli elementi allo schermo
+nel quale vinene visualizzato il nostro sito
+
+*/
+
+/* responsive layout */
+
+
+/* desktop
+
+*/
+@media (max-width: 1200px) {
+
+  /* body{
+  background-color: red;
+} */
+}
+
+/* tablet */
+@media (max-width: 800px) {
+  .blog__cards-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* mobile */
+@media (max-width: 650px) {
+  .blog__cards-container {
+    display: block;
+  }
+
+  .blog__cards-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .blog__cards-container {
+    height: 650px;
+  }
+}
+
+/* mini mobile */
+@media (max-width: 350px) {}
+
+
+.invia:hover{
+background-color: brown;
+}
+
+.inviaA:active{
+  background-color: green;
+}
+.inviaA:focus{
+  background-color: yellow;
+}
+
+.inviaA:visited{
+  background-color: red;
+}
+
+/* .blog__cards-container .blog__cards-card:nth-child(odd){
+  background-color: red;
+} */
+
+.inviaA{
+  position: relative;
+}
+
+.inviaA::before {/* prima */
+content: 'prova';
+margin-left: 30px;
+position: absolute;
+top: 0px;
+right: -20px;
+transform: rotateZ(90deg);
+cursor: pointer;
+}
+
+.inviaA::after{/* dopo */
+content: 'prova 2';
+}
+
+.blog__cards-card-foto{
+  position: relative;
+}
+
+.blog__cards-card-foto::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0,0.5)  ;
+}
+
+.blog__cards-card:hover .blog__cards-card-foto::after{
+  background-color: rgb(0, 0, 0,0.0)
+}
+
+.blog__cards-card:hover{
+  box-shadow: 0px 0px 10px 5px rgb(0, 0, 0,0.5);
+}
