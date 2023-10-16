@@ -2,60 +2,92 @@
 
 .container{
 display: grid;
+
 /* grid-template-columns: 50% 50%; */
 /* grid-template-columns: 1fr 50% 1fr; */
 /* grid-template-columns: repeat(3, 1fr) 200px 20%; */
 /* grid-template-columns: minmax(100px,300px); */
-grid-template-areas: "header header header"
+/* grid-template-areas: "header header header"
                      "main main sidebar"
                      "footer footer footer"
-                     "footer footer footer";
+                     "footer footer footer"; */
+/* grid-template: rows / columns   ;        */        
+/* grid-template: repeat(3, 1fr) / repeat(3, 1fr) ; */
+/* justify-items: start;
+justify-items: end;
+justify-items: stretch;
+align-items: start;
+align-items: end;
+align-items: stretch;
+align-items: center;
+place-items: center; */
+/* justify-content: start;
+justify-content: end;
+justify-content: center; */
+grid-template-columns: 1fr 1fr 1fr ;
+grid-template-rows: 300px 300px;
+
+
 
 
 }
 .item-1{
-grid-area:header ;
+/* grid-area:header ; */
 background-color: red;
+grid-row-start: 1;
+grid-row-end:4;
 }
 .item-2{
-    grid-area:header ;
+/*     grid-area:header ; */
 background-color: blue;
+grid-column-start: 2;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 3;
 }
 .item-3{
-    grid-area:header ;
+/*     grid-area:header ; */
 background-color: green;
+grid-row-start: 3;
+grid-row-end: 4;
+grid-column-start:2 ;
+grid-column-end:3 ;
 }
 .item-4{
-grid-area: main;
+/* grid-area: main; */
 background-color: tomato;
+grid-row-start: 3;
+grid-row-end: 4;
+grid-column-start:3 ;
+grid-column-end:4 ;
 }
 .item-5{
-    grid-area: main;
+ /*    grid-area: main; */
     background-color: tomato;
 }
 .item-6{
-    grid-area: sidebar;
+/*     grid-area: sidebar; */
     background-color: turquoise;
 }
 .item-7{
-    grid-area: footer;
+/*     grid-area: footer; */
     background-color: brown;
 
 
 }
 .item-8{
-    grid-area: footer;
+   /*  grid-area: footer; */
     background-color: brown;
 }
 .item-9{
-    grid-area: footer;
+   /*  grid-area: footer; */
     background-color: brown;
 }
 
 
 .item{
 /* /*     width: 200px; */
-/*     height: 200px;  */
+/*     height: 200px;   */
     border: 1px solid blue;
     display: flex;
     justify-content: center;
