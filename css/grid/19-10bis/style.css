@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 90px auto auto 90px;
+    grid-template-columns: 8% 30% 15% auto;
+}
+
+.blocco_foto{
+    grid-row: 1/5;
+    grid-column: 3/5;
+}
+
+.blocco_foto img{
+    vertical-align: middle;
+}
+
+.blocco_testo{
+    grid-column: 2/4;
+    grid-row: 2/4;
+/*     background-color: aliceblue; */
+    padding: 16px;
+   align-self: center;  
+    position: relative;
+}
+
+@media screen and (max-width:750px) {
+    .container{
+        display: block;
+    }
+    
+}
